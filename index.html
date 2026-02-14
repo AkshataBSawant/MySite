@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Be My Valentine?</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ffcccc, #ffe6f2);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      padding-top: 80px;
+    }
+    h1 {
+      color: #e60073;
+      font-size: 3em;
+      animation: heartbeat 1s infinite;
+    }
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      25% { transform: scale(1.1); }
+      50% { transform: scale(1); }
+      75% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    .heart {
+      font-size: 5em;
+      color: red;
+      margin: 20px;
+    }
+    .button {
+      margin: 15px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background-color: #e60073;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .button:hover {
+      background-color: #cc005f;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>💌 Will You Be My Valentine?</h1>
+  <div class="heart">❤️💕💖</div>
+  <button class="button" onclick="alert('Yay! You said YES! 💘 I promise unlimited love!')">Yes</button>
+  <button class="button" onclick="alert('No?! 😱 You don't have this option 😡...')">No</button>
+  <button class="button" onclick="alert('Maybe? 🤔 That’s basically a YES with extra suspense!')">Maybe</button>
+</body>
+</html>
